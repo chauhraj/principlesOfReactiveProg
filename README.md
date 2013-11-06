@@ -6,9 +6,9 @@ Monad is a type constructor M[T] that adheres to following algebraic laws. Besid
 Monad Laws
 ----------
 
-1. Left Identity
+* Left Identity
 
-```   
+```scala   
    unit(x) flatMap f == f(x)
 ```   
 ```scala
@@ -21,12 +21,13 @@ trait Option[+A] {
 }
 
 ```
-2. Right Identity
+* Right Identity
 
-```   
+```scala   
    m flatMap unit == m
 ```   
-3. Associativity
+* Associativity
+
 ```   
    (m flatMap f) flatMap g == m flatMap ( x => f(x) flatMap g )
 ```   
