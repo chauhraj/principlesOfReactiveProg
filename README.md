@@ -12,7 +12,7 @@ Monad Laws
    unit(x) flatMap f == f(x)
 ```   
 ```scala
-trait Option[+T] {
+trait Option[+A] {
 
   // from scala library
   @inline final def flatMap[B](f: A => Option[B]): Option[B] =
